@@ -83,4 +83,6 @@ dependencies {
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:$room_version")
 
+    //for live data
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
 }

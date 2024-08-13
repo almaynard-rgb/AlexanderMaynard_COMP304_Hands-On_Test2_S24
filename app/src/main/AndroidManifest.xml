@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AlexanderMaynard_COMP304_HandsOn_Test2_S24"
         tools:targetApi="34">
         <activity
-            android:name=".MainActivity"
+            android:name=".AlexanderActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
