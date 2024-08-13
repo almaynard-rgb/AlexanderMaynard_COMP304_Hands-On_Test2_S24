@@ -14,4 +14,7 @@ interface StockInfoDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertStockInfoItem(stockInfo: StockInfo)
+
+    @Query("DELETE FROM stock_info")
+    suspend fun deleteAllFromStockInfo()
 }

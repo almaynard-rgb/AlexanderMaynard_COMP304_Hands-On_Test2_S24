@@ -12,4 +12,8 @@ class StockInfoRepository(private val stockInfoDao: StockInfoDao) {
     suspend fun insertStockInfoItem(stockInfo: StockInfo) {
         stockInfoDao.insertStockInfoItem(stockInfo)
     }
+
+    suspend fun deleteAllFromStockInfo() {
+        stockInfoDao.deleteAllFromStockInfo()
+    }
 }

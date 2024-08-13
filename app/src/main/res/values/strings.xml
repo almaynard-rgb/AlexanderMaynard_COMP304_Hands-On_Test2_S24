@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">AlexanderMaynard_COMP304_Hands-On_Test2_S24</string>
+    <string name="app_name">COMP304 Hands-On Test2 S24</string>
+    <string name="activity_alexander_title_text">Stock Information</string>
+    <string name="insert_stocks_button_text">Insert Stocks (Hardcode)</string>
+    <string name="select_stock_radio_group_title_text">Select stock symbol:</string>
+    <string name="display_stock_info_button_text">Display stock info</string>
+    <string name="select_GOOGL_radiobutton_option_text">GOOGL</string>
+    <string name="select_AMZN_radiobutton_option_text">AMZN</string>
+    <string name="select_SSNLF_radiobutton_option_text">SSNLF</string>
+    <string name="database_no_data_error_message">Sorry it seems there are no items by that Id. Try inserting items first.</string>
 </resources>

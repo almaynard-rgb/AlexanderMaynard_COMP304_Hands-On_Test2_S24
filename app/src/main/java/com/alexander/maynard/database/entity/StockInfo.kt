@@ -7,22 +7,22 @@ import java.util.UUID
 
 @Entity(tableName = "stock_info")
 data class StockInfo(
-    @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "stock_symbol") private var stockSymbol: String,
+    @PrimaryKey @ColumnInfo(name = "stock_symbol") private var stockSymbol: String,
     @ColumnInfo(name = "company_name") private var companyName: String,
     @ColumnInfo(name = "stock_quote") private var stockQuote: Double
 ) {
     //UUID.randomUUID.toString().substring() gives a random string with a length of 6
-    constructor(companyName: String, stockQuote: Double) : this(UUID.randomUUID().toString().substring(0, 5), "Not set", 0.0)
+    constructor(companyName: String, stockQuote: Double) : this(UUID.randomUUID().toString().substring(0, 5), companyName, stockQuote)
 
-    fun stockSymbol(): String {
+    fun getStockSymbol(): String {
         return stockSymbol
     }
 
-    fun companyName(): String {
+    fun getCompanyName(): String {
         return companyName
     }
 
-    fun stockQuote(): Double {
+    fun getStockQuote(): Double {
         return stockQuote
     }
 
@@ -39,6 +39,6 @@ data class StockInfo(
     }
 
     override fun toString(): String {
-        return "Stock Info received:\nCompany Name: $companyName\nStock Quote: $stockQuote"
+        return "Company Name: ${getCompanyName()}\nStock Quote: ${getStockQuote()}"
     }
 }

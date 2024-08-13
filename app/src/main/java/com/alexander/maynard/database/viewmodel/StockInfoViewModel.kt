@@ -29,4 +29,8 @@ class StockInfoViewModel(application: Application): AndroidViewModel(application
     suspend fun insertStockInfoItem(stockInfo: StockInfo) = viewModelScope.launch {
         stockInfoRepo.insertStockInfoItem(stockInfo)
     }
+
+    suspend fun deleteAllFromStockInfo() = viewModelScope.launch {
+        stockInfoRepo.deleteAllFromStockInfo()
+    }
 }
