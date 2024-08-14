@@ -12,6 +12,8 @@ import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
+//Student Number: 301170707
+
 class StockInfoViewModel(application: Application): AndroidViewModel(application) {
     private val stockInfoRepo: StockInfoRepository
 

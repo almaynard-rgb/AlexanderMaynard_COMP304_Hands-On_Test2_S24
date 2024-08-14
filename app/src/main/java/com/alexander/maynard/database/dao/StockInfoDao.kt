@@ -6,6 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.alexander.maynard.database.entity.StockInfo
 
+//Student Number: 301170707
 
 @Dao
 interface StockInfoDao {

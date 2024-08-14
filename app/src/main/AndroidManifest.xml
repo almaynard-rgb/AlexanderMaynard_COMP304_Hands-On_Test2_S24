@@ -21,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver
+            android:name=".StockInfoReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.alexander.maynard.CUSTOM_INTENT"></action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

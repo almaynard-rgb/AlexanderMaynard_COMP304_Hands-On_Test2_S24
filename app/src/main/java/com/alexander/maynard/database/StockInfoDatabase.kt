@@ -7,6 +7,8 @@ import androidx.room.RoomDatabase
 import com.alexander.maynard.database.dao.StockInfoDao
 import com.alexander.maynard.database.entity.StockInfo
 
+//Student Number: 301170707
+
 //database for the application. uses an array of only StockInfo to build the application database
 @Database(entities = arrayOf(StockInfo::class), version = 1, exportSchema = false)
 abstract class StockInfoDatabase: RoomDatabase() {

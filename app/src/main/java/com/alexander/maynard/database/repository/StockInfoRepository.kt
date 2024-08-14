@@ -3,6 +3,8 @@ package com.alexander.maynard.database.repository
 import com.alexander.maynard.database.dao.StockInfoDao
 import com.alexander.maynard.database.entity.StockInfo
 
+//Student Number: 301170707
+
 class StockInfoRepository(private val stockInfoDao: StockInfoDao) {
 
     suspend fun getStockInfoItem(stockSymbol: String): StockInfo? {
