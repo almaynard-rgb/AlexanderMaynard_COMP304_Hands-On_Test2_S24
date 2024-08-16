@@ -61,10 +61,13 @@ class AlexanderActivity : AppCompatActivity() {
             //add first item manually to complete testing based on the criteria that only 2 items are inserted via the insert button
             //Also using the default constructor and setter methods to show that they work
             val googleStockInfoItem = StockInfo()
-            showCustomToast(applicationContext, "First stock item before setters: \n$googleStockInfoItem")
+            showCustomToast(applicationContext, "First stock item (GOOGL) before setters: \nStock Symbol: ${googleStockInfoItem.getStockSymbol()}\n$googleStockInfoItem")
             googleStockInfoItem.setStockSymbol("GOOGL")
             googleStockInfoItem.setCompanyName("Google")
             googleStockInfoItem.setStockQuote(800.0)
+            //show the same StockInfo item after setters
+            showCustomToast(applicationContext, "First stock item (GOOGL) after setters: \nStock Symbol: ${googleStockInfoItem.getStockSymbol()}\n$googleStockInfoItem")
+
 
             //insert the googleStockInfoItem to the database
             stockInfoViewModel.insertStockInfoItem(googleStockInfoItem)
