@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--Student Number: 301170707-->
+
+<!--Colors for the Hands-On Test 2-->
 <resources>
     <color name="black">#FF000000</color>
     <color name="grey">#656565</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#3F48CB</color>
+    <color name="pink">#FE4080</color>
 </resources>

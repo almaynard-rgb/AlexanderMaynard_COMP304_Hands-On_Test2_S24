@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--Student Number: 301170707-->
 
+<!--Custom toast layout (.xml)-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toast_root"
@@ -8,15 +10,10 @@
     android:layout_width="200dp"
     android:layout_height="200dp">
 
+    <!--Text view for the toast text to be shown-->
     <TextView
         android:id="@+id/toast_message_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/grey"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textColor="@color/white"
+        style="@style/custom_toast_text_view"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
